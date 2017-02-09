@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TableLayout
+        android:layout_width="250dp"
+        android:layout_height="match_parent"
+        android:id="@+id/characterInfoTable">
+        <TableRow>
+            <TextView
+                android:id="@+id/characterName"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:text="Name:"
+                android:textSize="20sp" />
+            <EditText
+                android:id="@+id/characterNameEdit"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:textSize="20sp" />
+        </TableRow>
+        <TableRow>
+            <TextView
+                android:id="@+id/characterRace"
+                android:text="Race:"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:textSize="20sp" />
+            <Button
+                android:id="@+id/characterRaceEdit"
+                android:text="Select Race"
+                android:onClick="onClickRace"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:textSize="20sp" />
+        </TableRow>
+        <TableRow>
+            <TextView
+                android:id="@+id/characterClass"
+                android:text="Class:"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:textSize="20sp" />
+            <TextView
+                android:id="@+id/characterClassEdit"
+                android:text="Select Class"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:textSize="20sp" />
+        </TableRow>
+    </TableLayout>
+</LinearLayout>
