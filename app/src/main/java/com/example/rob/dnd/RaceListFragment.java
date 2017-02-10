@@ -11,9 +11,13 @@ import android.view.View;
 
 public class RaceListFragment extends Fragment{
 
-    public void onClickRace(View view, int raceID) {
+    public void onCreate(View view){
+
+    }
+
+    public void onClickRace(View view) {
         Bundle bundle = new Bundle();
-        bundle.putInt("raceID", raceID);
+        bundle.putInt("raceID", view.getId());
         FragmentTransaction ft = getFragmentManager().beginTransaction();
         Fragment race = new CharacterRaceFragment();
         race.setArguments(bundle);

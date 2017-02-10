@@ -12,6 +12,17 @@
         <item>Human</item>
         <item>Tiefling</item>
     </string-array>
+    <string-array name="dwarf_trait_header">
+        <item>Ability Score Increase: </item>
+        <item>Size: </item>
+        <item>Speed: </item>
+        <item>Darkvizion: </item>
+        <item>Dwarven Resiience: </item>
+        <item>Dwarven Combat Training: </item>
+        <item>Tool Proficiency: </item>
+        <item>Stonecunning: </item>
+        <item>Languages: </item>
+    </string-array>
     <string-array name="class_array">
         <item>Barbarian</item>
         <item>Bard</item>

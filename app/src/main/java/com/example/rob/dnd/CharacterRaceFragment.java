@@ -31,7 +31,7 @@ public class CharacterRaceFragment extends Fragment implements OnItemSelectedLis
     public View onCreateView(LayoutInflater inflater, ViewGroup parent, Bundle savedInstanceState) {
         Bundle bundle = this.getArguments();
         if (bundle != null) {
-            int i = bundle.getInt("RaceID", raceID);
+            raceID = bundle.getInt("RaceID");
         }
 
         View view = inflater.inflate(R.layout.character_race_fragment, parent, false);
@@ -47,9 +47,6 @@ public class CharacterRaceFragment extends Fragment implements OnItemSelectedLis
         raceSpinner.setAdapter(adapter);
         raceSpinner.setOnItemSelectedListener(this);
 
-        if(characterRace == "Dragonborn"){
-            return view;
-        }
         // Defines the xml file for the fragment
         return view;
     }
