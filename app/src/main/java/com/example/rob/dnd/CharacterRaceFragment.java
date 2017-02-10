@@ -25,8 +25,15 @@ public class CharacterRaceFragment extends Fragment implements OnItemSelectedLis
     Button raceButton;
     TextView raceTextView;
     String characterRace;
+    TextView raceTitle;
+    int raceID;
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup parent, Bundle savedInstanceState) {
+        Bundle bundle = this.getArguments();
+        if (bundle != null) {
+            int i = bundle.getInt("RaceID", raceID);
+        }
+
         View view = inflater.inflate(R.layout.character_race_fragment, parent, false);
         raceSpinner = (Spinner) view.findViewById(R.id.race_spinner);
         raceButton = (Button) view.findViewById(R.id.characterRaceEdit);
@@ -38,23 +45,23 @@ public class CharacterRaceFragment extends Fragment implements OnItemSelectedLis
         adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
         // Apply the adapter to the spinner
         raceSpinner.setAdapter(adapter);
-        raceSpinner.setOnItemSelectedListener(parent);
+        raceSpinner.setOnItemSelectedListener(this);
+
+        if(characterRace == "Dragonborn"){
+            return view;
+        }
         // Defines the xml file for the fragment
         return view;
     }
 
     @Override
-    public void setOnItemSelectedListener(){
-
-    }
-    @Override
     public void onItemSelected(AdapterView<?> parent, View view, int position,
                                long id) {
         characterRace = parent.getItemAtPosition(position).toString();
         raceSpinner.setSelection(position);
-        String viewVdc = (String) raceSpinner.getSelectedItem();
-        raceButton.setText(characterRace);
         raceTextView.setText(characterRace);
+        raceID = getResources().getIdentifier(characterRace, "id", getActivity().getPackageName());
+        raceTitle = (TextView) view.findViewById(R.id.characterRace);
 
     }
     @Override

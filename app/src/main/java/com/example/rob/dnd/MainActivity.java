@@ -60,15 +60,9 @@ public class MainActivity extends AppCompatActivity {
         {
             @Override
             public void onClick(View view) {
-                onClickRace(view);
+                //onClickRace(view);
             }
         });
-    }
-    public void onClickRace(View view) {
-        FragmentTransaction ft = getSupportFragmentManager().beginTransaction();
-        ft.replace(R.id.characterInfoPlaceHolder, new CharacterRaceFragment());
-        ft.addToBackStack(null);
-        ft.commit();
     }
 
 

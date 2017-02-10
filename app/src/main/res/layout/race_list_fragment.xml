@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TableLayout
+        android:layout_width="105sp"
+        android:layout_height="match_parent"
+        android:id="@+id/tableLayout">
+        <TableRow>
+            <TextView
+                android:id="@+id/dragonborn"
+                android:text="Dragonborn"
+                android:onClick="onClick"
+                android:clickable="true"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:textSize="20sp" />
+        </TableRow>
+        <TableRow>
+            <TextView
+                android:id="@+id/dwarf"
+                android:text="Dwarf"
+                android:onClick="onClick"
+                android:clickable="true"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:textSize="20sp" />
+        </TableRow>
+        <TableRow>
+            <TextView
+                android:id="@+id/elf"
+                android:text="Elf"
+                android:onClick="onClick"
+                android:clickable="true"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:textSize="20sp" />
+        </TableRow>
+        <TableRow>
+            <TextView
+                android:id="@+id/gnome"
+                android:text="Gnome"
+                android:onClick="onClick"
+                android:clickable="true"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:textSize="20sp" />
+        </TableRow>
+        <TableRow>
+            <TextView
+                android:id="@+id/half-elf"
+                android:text="Half-Elf"
+                android:onClick="onClick"
+                android:clickable="true"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:textSize="20sp" />
+        </TableRow>
+        <TableRow>
+            <TextView
+                android:id="@+id/half-orc"
+                android:text="Half-Orc"
+                android:onClick="onClick"
+                android:clickable="true"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:textSize="20sp" />
+        </TableRow>
+        <TableRow>
+            <TextView
+                android:id="@+id/halfling"
+                android:text="Halfling"
+                android:onClick="onClick"
+                android:clickable="true"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:textSize="20sp" />
+        </TableRow>
+        <TableRow>
+            <TextView
+                android:id="@+id/human"
+                android:text="Human"
+                android:onClick="onClick"
+                android:clickable="true"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:textSize="20sp" />
+        </TableRow>
+        <TableRow>
+            <TextView
+                android:id="@+id/tiefling"
+                android:text="Tiefling"
+                android:onClick="onClick"
+                android:clickable="true"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:textSize="20sp" />
+        </TableRow>
+    </TableLayout>
+</LinearLayout>
